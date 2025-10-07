@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="#1a1b2e"
+    tools:context="br.com.senacrs.trocadetelas.TrocaTelasActivity">
+
+    <TextView
+        android:id="@+id/txtTelaPrincipal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tela principal"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:background="#2a2d44"
+        android:padding="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/edtNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtTelaPrincipal"
+        android:layout_marginTop="15dp"
+        android:hint="Digite seu nome"
+        android:textColor="#ffffff"
+        android:textColorHint="#9ca3af"
+        android:backgroundTint="#6366f1" />
+
+    <EditText
+        android:id="@+id/edtIdade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtNome"
+        android:layout_marginTop="10dp"
+        android:hint="Digite sua idade"
+        android:inputType="number"
+        android:textColor="#ffffff"
+        android:textColorHint="#9ca3af"
+        android:backgroundTint="#6366f1" />
+
+    <Button
+        android:layout_width="280dp"
+        android:layout_height="52dp"
+        android:text="Confirmar"
+        android:id="@+id/btnConfirmar"
+        android:layout_below="@+id/edtIdade"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#6366f1"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
